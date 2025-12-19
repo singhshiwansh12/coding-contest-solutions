@@ -1,0 +1,4 @@
+node_modules
+.env
+.DS_Store
+contest_solutions_full_source.md
