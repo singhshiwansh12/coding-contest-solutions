@@ -4,8 +4,7 @@ A full-stack web application to browse, search, and filter competitive programmi
 
 ## 🚀 Features
 *   **Contest Solutions Library**: Browse solutions from various competitive programming contests (CodeChef, Codeforces, etc.)
-*   **Search Functionality**: Search solutions by problem name or contest name
-*   **Contest Filtering**: Filter solutions by specific contests using a dropdown menu
+  
 *   **Difficulty Levels**: View problems categorized by difficulty (Easy, Medium, Hard)
 *   **C++ Solutions**: All solutions are provided in C++ with detailed explanations
 *   **Clean UI**: Modern, responsive interface for easy navigation
@@ -60,8 +59,6 @@ Open your browser and navigate to:
 3.  **`npm run dev`**: Verify "Server running on port 3000" message
 4.  **Open Browser**: Go to `http://localhost:3000`
 5.  **Test Solutions Display**: Confirm solution cards are visible
-6.  **Test Search**: Try searching for a problem name
-7.  **Test Contest Filter**: Select a contest from dropdown and verify filtering works
 
 ---
 
