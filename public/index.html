@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Solutions - Share Your Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 Contest Solutions</h1>
+            <p>Share and Discover Coding Contest Solutions</p>
+        </header>
+
+        <div class="form-container">
+            <h2 id="form-title">➕ Add New Solution</h2>
+            <form id="solutionForm">
+                <input type="hidden" id="solutionId">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contestName">Contest Name:</label>
+                        <input type="text" id="contestName" placeholder="e.g., LeetCode Weekly Contest 380" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty" required>
+                            <option value="">Select difficulty</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="problemTitle">Problem Title:</label>
+                    <input type="text" id="problemTitle" placeholder="e.g., Two Sum" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="language">Programming Language:</label>
+                        <select id="language" required>
+                            <option value="">Select language</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="C">C</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="author">Your Name:</label>
+                        <input type="text" id="author" placeholder="Enter your name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="code">Solution Code:</label>
+                    <textarea id="code" rows="8" placeholder="Paste your solution code here..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="explanation">Explanation:</label>
+                    <textarea id="explanation" rows="4" placeholder="Explain your approach and algorithm..." required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="timeComplexity">Time Complexity:</label>
+                        <input type="text" id="timeComplexity" placeholder="e.g., O(n)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="spaceComplexity">Space Complexity:</label>
+                        <input type="text" id="spaceComplexity" placeholder="e.g., O(1)">
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submitBtn" class="btn btn-primary">Add Solution</button>
+                    <button type="button" id="cancelBtn" class="btn btn-secondary" style="display: none;">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="solutions-section">
+            <h2>📚 All Solutions</h2>
+            <div id="solutionsList" class="solutions-list">
+                <!-- Solutions will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
